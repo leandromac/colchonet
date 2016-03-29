@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
 
 	validate :email_format
 
+	has_secure_password
+
 	private
 
 	def email_format
